@@ -6,6 +6,32 @@
 <link rel="manifest" href="./manifest.webmanifest"><title>Japan Journey '26</title>
 <style>
 :root{--paper:#f7f2e8;--ink:#28352e;--muted:#777b6d;--red:#c94e3b;--green:#55745b;--sage:#dce5d3;--line:#e7dfd0;--card:#fffdf8;--gold:#e9b95e}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,sans-serif}.app{max-width:880px;margin:auto;padding:20px 16px 90px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:18px}.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--green)}h1{font-size:clamp(27px,6vw,40px);line-height:1.05;margin:5px 0;letter-spacing:-.04em}.switch{display:flex;gap:3px;background:#eae2d3;border-radius:30px;padding:4px}.switch button,.day button,.nav button{border:0;border-radius:22px;padding:9px 12px;background:transparent;font-weight:800;color:var(--ink);cursor:pointer}.switch button.active{background:white}.hero{background:#e7eddf;border:1px solid #d9dfd0;border-radius:24px;overflow:hidden}.herohead{padding:18px 18px 0}.hero h2{margin:5px 0;font-size:23px}.sub,.muted{color:var(--muted);font-size:13px}.illustration{display:block;width:100%;max-height:300px}.mapbtns{display:flex;gap:7px;flex-wrap:wrap;padding:0 15px 15px}.mapbtns button{border:1px solid #d5decc;background:#fffdf8;border-radius:12px;padding:9px 12px;font-weight:750;cursor:pointer}.mapbtns button.active{background:var(--green);color:white}.section{margin-top:22px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}.sectionhead h2{font-size:21px;margin:0}.day select{max-width:55vw;border:1px solid var(--line);background:white;padding:10px;border-radius:11px;color:var(--ink)}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0}.tag{display:inline-block;border-radius:20px;padding:5px 9px;background:var(--sage);font-size:10px;font-weight:850;letter-spacing:.04em}.tag.warn{background:#f8e5ca;color:#8d5729}.card h3{margin:9px 0 5px;font-size:18px}.event{border-left:2px solid #d7dfce;padding:0 0 18px 14px;margin-left:5px}.event:last-child{padding-bottom:0}.event strong{font-size:14px}.event p{font-size:13px;line-height:1.5;color:var(--muted);margin:5px 0}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{display:inline-block;border:0;border-radius:11px;padding:11px 13px;background:var(--red);color:white;text-decoration:none;font-size:12px;font-weight:800;cursor:pointer}.btn.secondary{background:#eee8dc;color:var(--ink)}.bottom{position:fixed;bottom:0;left:0;right:0;background:#fffdf8ed;border-top:1px solid var(--line);display:flex;justify-content:center;padding:8px;gap:6px}.bottom button{flex:1;max-width:170px;border:0;background:transparent;padding:9px 4px;border-radius:10px;font-size:11px;font-weight:800;color:var(--muted)}.bottom button.active{background:var(--sage);color:var(--ink)}.view{display:none}.view.active{display:block}.note{font-size:12px;line-height:1.55;background:#fbefd8;padding:12px;border-radius:12px;color:#6d634e}.small{font-size:11px;color:var(--muted);line-height:1.5}footer{text-align:center;font-size:11px;color:var(--muted);padding:22px 0}@media(min-width:700px){.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero{max-height:530px}}
+
+/* Visual polish pass */
+:root{--paper:#f5f0e6;--ink:#23342b;--muted:#70796e;--red:#c64d3b;--green:#466d55;--sage:#dce8d8;--line:#e5ddce;--card:#fffdf8}
+body{background:radial-gradient(ellipse at 90% 0%,#e9eee1 0,transparent 34%),var(--paper);letter-spacing:-.01em}
+.app{max-width:980px;padding-top:clamp(18px,4vw,34px)}
+.top{margin-bottom:24px}.eyebrow{letter-spacing:.16em;font-size:10px}
+h1{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:-.045em}
+.hero{box-shadow:0 14px 35px #32452a12;background:linear-gradient(145deg,#e4ecdf,#f0e9d9);border-color:#d8e0d2}
+.herohead{padding:clamp(18px,4vw,28px) clamp(18px,4vw,28px) 0}.hero h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(24px,4vw,32px);letter-spacing:-.03em}
+.illustration{max-height:330px;filter:saturate(.93)}
+.mapbtns{padding:0 18px 20px}.mapbtns button{transition:transform .18s ease,box-shadow .18s ease;background:#fffdf8d9;border-color:#d7dfd1}.mapbtns button:hover{transform:translateY(-2px);box-shadow:0 5px 12px #263c2b16}
+.section{margin-top:28px}.sectionhead{margin-bottom:14px}.sectionhead h2{font-family:Georgia,'Times New Roman',serif;font-size:25px;letter-spacing:-.025em}
+.card{box-shadow:0 6px 20px #4c483b08;border-radius:20px;padding:clamp(16px,3vw,23px);transition:box-shadow .2s ease}
+.card h3{font-size:19px;letter-spacing:-.025em}.event{border-left:2px solid #d9e3d3;padding-left:16px;margin-left:3px;position:relative}.event:before{content:'';position:absolute;left:-6px;top:2px;width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px #e8eee3}
+.event p{font-size:14px;line-height:1.65}.event p strong{color:var(--ink);font-size:15px}
+.tag{letter-spacing:.08em;font-size:9px}.tag.warn{background:#f7e5c8;color:#85521e}
+.btn{transition:transform .18s ease,filter .18s ease}.btn:hover{transform:translateY(-1px);filter:brightness(.97)}
+.note{margin-top:18px;border:1px solid #f0dfbd;line-height:1.65}
+.bottom{padding:9px max(10px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));backdrop-filter:blur(14px);background:#fffdf8e8}
+.bottom button{font-size:12px;transition:background .2s ease,color .2s ease}
+footer{padding-bottom:24px}
+@keyframes train-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+.illustration g[transform="translate(135 174)"]{animation:train-bob 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(min-width:700px){.hero{max-height:none}.illustration{max-height:350px}.section{margin-top:34px}.card:hover{box-shadow:0 10px 28px #4c483b10}}
+
 </style></head>
 <body><main class="app">
 <header class="top"><div><div class="eyebrow" data-en="YOUR LITTLE TRAVEL COMPANION" data-id="TEMAN KECIL PERJALANANMU">YOUR LITTLE TRAVEL COMPANION</div><h1>Japan Journey <span style="color:var(--red)">’26</span></h1></div><div class="switch"><button id="en" class="active">EN</button><button id="id">ID</button></div></header>
