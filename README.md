@@ -32,3 +32,11 @@ The site is designed for GitHub Pages. In Settings → Pages, choose **Deploy fr
 - Common Japanese station names are shown in kanji alongside English names to help match station signs.
 - Timetable links point to official operator pages where available: JR East, JR Central Tokaido Shinkansen, Tokyo Monorail, Kintetsu, and Fujikyu City Bus.
 - The app does not embed guaranteed departure times or live disruption data. Use the linked timetable/route planner for the actual date, and confirm platform and service on the day. Drive buttons search the signed-in user's Drive; they do not grant access to files.
+
+
+## Latest mobile travel features
+- Tap a city directly on the illustrated Japan map to jump to the first day for that city.
+- Homepage master Google Drive folder plus direct category folders for flights, trains, buses, hotels, visa, and attraction tickets.
+- Itinerary items route to the relevant document folder based on the transport or activity described.
+- Transit cards show origin, transfer/line and destination steps plus a Google Maps public-transport directions link.
+- Departure-time chips are planning aids, not live data. The official timetable button opens the relevant operator site. Confirm the exact travel date and service before boarding.
