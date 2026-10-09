@@ -1,0 +1,9 @@
+{
+  "name": "Japan Journey 2026",
+  "short_name": "Japan Journey",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#f7f2e8",
+  "description": "A bilingual, offline-friendly Japan travel companion."
+}
