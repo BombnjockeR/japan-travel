@@ -24,3 +24,11 @@ The site is designed for GitHub Pages. In Settings → Pages, choose **Deploy fr
 - `index.html`: app UI, styling, itinerary data and interactions
 - `manifest.webmanifest`: installable web app metadata
 - `sw.js`: service-worker caching
+
+
+## Travel-first navigation update
+- Refined hand-drawn-style hero into a crisp, scalable inline SVG vector illustration.
+- Every itinerary item has one-tap Google Maps directions, a Google Drive search shortcut for that date/item, and an operator timetable link.
+- Common Japanese station names are shown in kanji alongside English names to help match station signs.
+- Timetable links point to official operator pages where available: JR East, JR Central Tokaido Shinkansen, Tokyo Monorail, Kintetsu, and Fujikyu City Bus.
+- The app does not embed guaranteed departure times or live disruption data. Use the linked timetable/route planner for the actual date, and confirm platform and service on the day. Drive buttons search the signed-in user's Drive; they do not grant access to files.
